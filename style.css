@@ -1,0 +1,415 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Avalon-Bold;
+    src: url(fonts/avalon-bold.ttf);
+    font-weight: bold;
+}
+
+/********HEADER*******/
+
+.logo {
+    margin: 53px auto;
+    width: 245px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/********MAIN*******/
+main {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section1 {
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Avalon-Bold', serif;
+    font-size: 56px;
+    color: #191919;
+    letter-spacing: 0.8px;
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+.yellow {
+    color: #fedd23;
+}
+
+p {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    line-height: 43px;
+
+}
+
+/********FORM*******/
+
+.form-section {
+    max-width: 948px;
+    margin: 12% auto 15%;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 400px;
+    padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+.form-group {
+    box-sizing: border-box;
+    width: 47%;
+    margin-top: 1.5rem;
+}
+
+ label {
+    display: inline-block;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    color: #4e4e4e;
+    letter-spacing: 1.4px;
+
+}
+
+.block1 input, .block1 textarea {
+    display: block;
+    width: 100%;
+    padding: .7rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.block1 textarea {
+    resize: none;
+}
+
+.file_upload{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 3em;
+    width: 100%;
+    margin-bottom: 0;
+    padding: .375rem .5rem;
+    font-size: 1rem;
+    line-height: 2;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.file_upload .button, .file_upload > .custom-text{
+    display: block;
+    cursor: pointer
+}
+.file_upload .button{
+    float: right;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    width: 88px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 2px;
+    background-color: #fddc3e;
+    border: none;
+}
+
+.file_upload > .custom-text{
+    background: transparent;
+    padding-left: 1em;
+    text-transform: initial;
+    font-size: 14px;
+    color: #4e4e4e;
+    font-weight: normal;
+}
+
+.file_upload input[type=file]{
+    position: absolute;
+    top: 0;
+    opacity: 0
+}
+
+/********RADIOBUTTON*******/
+.block2 {
+    padding-top: 35px;
+}
+
+.block2 p {
+    text-align: start;
+    font-size: 16px;
+    line-height: 36px;
+    color: #4d4d4d;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.htmlacademy {
+    border-bottom: solid 1px #fddc3e;
+}
+
+.form-radio {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-radio label {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.form-radio .radiomark {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+}
+
+.form-radio input:checked ~ .radiomark {
+    background-color: #ffffff;
+}
+
+.radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-radio input:checked ~ .radiomark:after {
+    display: block;
+}
+
+.form-radio .radiomark:after {
+    top: 10px;
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(77, 77, 77, 0.81);
+}
+
+/********CHECKBOX*******/
+.block3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 480px;
+}
+
+.mark {
+    text-align: start;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+    color: #979797;
+    margin-top: 30px;
+}
+
+.form-check {
+    box-sizing: border-box;
+    position: relative;
+    width: 48%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.form-check label {
+    margin-left: 66px;
+    cursor: pointer;
+    text-transform: inherit;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.form-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border-radius: 2px;
+    border: solid 1px #dcdcdc;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.form-check .checkmark:after {
+    left: 16px;
+    top: 11px;
+    width: 5px;
+    height: 10px;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn {
+    font-size: 0;
+    width: 318px;
+    height: 95px;
+    background: url("img/button.png") center no-repeat;
+    background-size: cover;
+    border: none;
+    display: block;
+    margin: 57px auto;
+}
+
+
+/********FOOTER*******/
+
+.black {
+    background-color: #000000;
+    padding: 5% 5% 8%;
+}
+.map {
+    background-image: url(img/bitmap@2x.png);
+    background-size: contain;
+    /*width: 100%;*/
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 8% 5%;
+}
+
+.slogan {
+    margin: 8% 11%;;
+}
+
+.slogan h2 {
+    font-family: 'Avalon-Bold', serif;
+    font-size: 40px;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+    .section4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section1 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .slogan {
+        margin: 8% 0;
+    }
+    .slogan h2 {
+        font-size: 32px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        width: 170px;
+    }
+    p.content {
+        font-size: 20px;
+    }
+    .block1 {
+        height: auto;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .block3 {
+        height: auto;
+    }
+    .form-check {
+        width: 100%;
+    }
+    .slogan h2 {
+        font-size: 22px;
+    }
+    .btn {
+        width: 275px;
+    }
+
+}
+
+/*@media only screen and ( max-width: 500px ){  !* example *!*/
+    /*.file_upload > div{*/
+        /*display: none*/
+    /*}*/
+    /*.file_upload > button{*/
+        /*width: 100%*/
+    /*}*/
+/*}*/
+
+
